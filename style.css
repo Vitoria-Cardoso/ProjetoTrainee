@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-light: hsl(43, 100%, 71%);
+  --headline: hsl(0, 2%, 8%);
+  --basic-color:hsl(0, 0%, 98%);
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  background: var(--basic-color);
+}
+
+.wrapper {
+  width: 37.5rem;
+  background-color: aqua;
+  margin-inline: auto ;
+}
+
+button {
+  background-color: var(--primary-light);
+
+  border: none;
+  border-radius: 1rem;
+
+  width: 28.7rem;
+  height: 6rem;
+
+  font-weight: 600;
+  color: #fff;
+
+  margin-bottom: 3rem;
+  margin-inline: auto;
+
+
+}
+
+
