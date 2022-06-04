@@ -8,6 +8,8 @@
   --primary-light: hsl(43, 100%, 71%);
   --headline: hsl(0, 2%, 8%);
   --basic-color:hsl(0, 0%, 98%);
+  --shadow-text: hsla(0, 0%, 0%, 0.25); 
+  --fundo-amarelo-medio:hsl(50, 100%, 88%);
 
 }
 
@@ -20,7 +22,6 @@ body {
 
 .wrapper {
   width: 37.5rem;
-  background-color: aqua;
   margin-inline: auto ;
 }
 
@@ -35,10 +36,26 @@ button {
 
   font-weight: 600;
   color: #fff;
+  line-height: 2.4rem;
 
   margin-bottom: 3rem;
   margin-inline: auto;
 
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 2rem;
+}
+
+.btn-frase svg{
+  margin-left: 3.3rem;
+  border: 0.1rem solid var(--fundo-amarelo-medio);
+  border-radius: 2.3rem;
+}
+
+.btn-frase p {
+  text-shadow: 0rem 0.1rem 0.4rem var(--shadow-text);
+  font-family:'Poppins', sans-serif;
 
 }
 
