@@ -10,6 +10,8 @@
   --basic-color:hsl(0, 0%, 98%);
   --shadow-text: hsla(0, 0%, 0%, 0.25); 
   --fundo-amarelo-medio:hsl(50, 100%, 88%);
+  --primary-color: hsl(215, 73%, 49% );
+  --fundo-amarelo-claro:hsl(50, 100%, 97%);
 
 }
 
@@ -44,19 +46,70 @@ button {
   display: flex;
   align-items: center;
   justify-content: left;
-  gap: 2rem;
+  gap: 1.6rem;
 }
 
-.btn-frase svg{
-  margin-left: 3.3rem;
+.btn-frase-icon{
+
   border: 0.1rem solid var(--fundo-amarelo-medio);
-  border-radius: 2.3rem;
+  border-radius: 50%;
+
+  width: 3.4rem;
+  height: 3.4rem;
+
+  background-color: var(--fundo-amarelo-medio);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-frase p {
+.icon-last-circ{
+ margin-left: 1.6rem;
+
+  border: 0.1rem solid var(--fundo-amarelo-claro);
+  border-radius: 50%;
+
+  background: var(--fundo-amarelo-claro);
+  
+  width: 4.4rem;
+  height: 4.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.btn-frase-p {
   text-shadow: 0rem 0.1rem 0.4rem var(--shadow-text);
   font-family:'Poppins', sans-serif;
 
 }
 
+.headline{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline: 4.4rem;
 
+}
+
+.btn-add {
+  border: 0.2rem solid var(--primary-color);
+	border-radius: 50%;
+
+  height: 3rem;
+	width: 3rem;
+}
+
+.title{
+  font-family: 'Poppins';
+
+  font-weight: 400;
+  font-size: 20px;
+
+  line-height: 30px;
+  letter-spacing: -0.025em;
+}
