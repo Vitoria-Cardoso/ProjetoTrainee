@@ -31,6 +31,20 @@ body {
 
 .header {
   background: var(--primary-color);
+  height: 8rem ;
+  margin-bottom: 3rem;
+
+  box-shadow: 0rem 0rem 1rem 0.2rem rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.img-unect{
+  margin-left: 2.1rem;
 }
 
 .light-mode{
@@ -50,6 +64,8 @@ body {
 .switch-light-mode {
   border: 0.1rem solid var(--primary-light);
   border-radius: 5rem;
+
+  margin-right: 2rem;
 
   width: 5rem;
   height: 2.4rem;
