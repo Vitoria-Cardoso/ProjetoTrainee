@@ -13,6 +13,7 @@
   --fundo-amarelo-medio: hsl(50, 100%, 88%);
   --primary-color: hsl(215, 73%, 49%);
   --fundo-amarelo-claro: hsl(50, 100%, 97%);
+  --gray-section: hsl(0, 0%, 93%);
 }
 
 body {
@@ -31,7 +32,7 @@ body {
 
 .header {
   background: var(--primary-color);
-  height: 8rem ;
+  height: 8rem;
   margin-bottom: 3rem;
 
   box-shadow: 0rem 0rem 1rem 0.2rem rgba(0, 0, 0, 0.3);
@@ -40,14 +41,13 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
-.img-unect{
+.img-unect {
   margin-left: 2.1rem;
 }
 
-.light-mode{
+.light-mode {
   border: 0.1rem solid #fff;
   border-radius: 50%;
 
@@ -70,8 +70,7 @@ body {
   width: 5rem;
   height: 2.4rem;
 
-  background: 
-  linear-gradient(90deg, #ffc93f 0%, #ffc93f 0.01%, #ffe03f 100%);
+  background: linear-gradient(90deg, #ffc93f 0%, #ffc93f 0.01%, #ffe03f 100%);
 
   display: flex;
   align-items: center;
@@ -159,4 +158,32 @@ button {
 
   line-height: 30px;
   letter-spacing: -0.025em;
+}
+
+/*====================== TASKS MENU ===================== */
+
+.tasks {
+  margin-top: 0.8rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks-section {
+  border: 0.1rem solid var(--gray-section);
+  border-radius: 1rem;
+
+  width: 28.7rem;
+  height: 39.6rem;
+
+  background-color: var(--gray-section);
+}
+
+.navigate-before {
+  margin-left: 1rem;
+}
+.navigate-next {
+  margin-right: 1rem;
 }
