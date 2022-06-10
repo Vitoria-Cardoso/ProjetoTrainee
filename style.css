@@ -36,16 +36,14 @@ body {
   height: 8rem;
   margin-bottom: 3rem;
 
+  padding-inline: 2rem;
+
   box-shadow: 0rem 0rem 1rem 0.2rem rgba(0, 0, 0, 0.3);
 
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.img-unect {
-  margin-left: 2.1rem;
 }
 
 .light-mode {
@@ -66,8 +64,6 @@ body {
   border: 0.1rem solid var(--primary-light);
   border-radius: 5rem;
 
-  margin-right: 2rem;
-
   width: 5rem;
   height: 2.4rem;
 
@@ -84,6 +80,8 @@ button {
 
   border: none;
   border-radius: 1rem;
+
+  padding-left: 2.2rem;
 
   width: 28.7rem;
   height: 6rem;
@@ -116,8 +114,6 @@ button {
 }
 
 .icon-last-circ {
-  margin-left: 1.6rem;
-
   border: 0.1rem solid var(--fundo-amarelo-claro);
   border-radius: 50%;
 
@@ -137,11 +133,13 @@ button {
   line-height: 3rem;
 }
 
+/* ================ HEADLINE  ===================*/
+
 .headline {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-inline: 4.4rem;
+  padding-inline: 4.4rem;
 }
 
 .btn-add {
@@ -190,7 +188,7 @@ button {
   margin-right: 1rem;
 }
 
-.switch-task{
+.switch-task {
   margin-top: 1.4rem;
 
   display: flex;
@@ -199,12 +197,16 @@ button {
   gap: 1.4rem;
 }
 
-footer{
+footer {
   font-weight: 100;
   font-size: 1.4rem;
   line-height: 2.1rem;
   color: #fff;
   font-style: normal;
+
+  margin-top: 3.2rem;
+
+  padding-left: 2rem;
 
   height: 7rem;
 
@@ -215,7 +217,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.2rem ;
+  gap: 0.2rem;
 }
 
 footer a {
@@ -226,17 +228,10 @@ footer a {
 
 footer span {
   font-weight: 600;
-
 }
 
-.nome{
+.nome {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-
-.trainee {
-  margin-left: 2rem;
-}
-
-
