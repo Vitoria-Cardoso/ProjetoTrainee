@@ -29,9 +29,9 @@ body {
   margin-inline: auto;
 }
 
-/*====================== HEADER ======================*/
+/*====================== nav ======================*/
 
-.header {
+.nav {
   background: var(--primary-color);
   height: 8rem;
   margin-bottom: 3rem;
