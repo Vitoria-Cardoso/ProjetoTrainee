@@ -235,3 +235,73 @@ footer span {
   align-items: center;
   gap: 0.5rem;
 }
+
+/*=============== MODAL FRASES DO DIA ===============*/
+
+body.frases-expanded .frases-modal {
+  position: fixed;
+
+  background-color: #fff;
+  box-shadow: 0rem 0rem 1rem 0.2rem rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+
+  width: 31.5rem;
+  height: 21.8rem;
+}
+
+body.frases-expanded .nav-frase-mdl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.frases-expanded .icon-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  gap: 1rem;
+}
+
+body.frases-expanded .icon-mdl {
+  border: 0.1rem solid var(--fundo-amarelo-medio);
+  border-radius: 50%;
+
+  width: 3.4rem;
+  height: 3.4rem;
+
+  background-color: var(--fundo-amarelo-medio);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.frases-expanded .icon-circ-mdl {
+  border: 0.1rem solid var(--fundo-amarelo-claro);
+  border-radius: 50%;
+
+  width: 4.4rem;
+  height: 4.4rem;
+
+  background-color: var(--fundo-amarelo-claro);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.frases-expanded .title-frase-mdl {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+body.frases-expanded .close-frase {
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 50%;
+
+  height: 3rem;
+  width: 3rem;
+}
