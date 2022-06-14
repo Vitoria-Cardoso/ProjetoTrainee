@@ -1,6 +1,7 @@
 /*=================== GERAL ======================*/
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -17,11 +18,15 @@
   --fundo-azul: hsl(215, 82%, 36%);
 }
 
+html,
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   text-align: center;
   background: var(--basic-color);
+
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {
@@ -29,7 +34,7 @@ body {
   margin-inline: auto;
 }
 
-/*====================== nav ======================*/
+/*=====================     = nav ======================*/
 
 .nav {
   background: var(--primary-color);
@@ -74,8 +79,13 @@ body {
   justify-content: left;
 }
 
-/* ======================= CONTEUDO ================= */
-button {
+/* ======================= header ================= */
+
+.header button {
+  cursor: pointer;
+}
+
+.btn-frase {
   background-color: var(--primary-light);
 
   border: none;
@@ -142,12 +152,15 @@ button {
   padding-inline: 4.4rem;
 }
 
-.btn-add {
+.headline button {
   border: 0.2rem solid var(--primary-color);
   border-radius: 50%;
+  background-color: var(--basic-color);
 
   height: 3rem;
   width: 3rem;
+
+  cursor: pointer;
 }
 
 .title {
@@ -238,12 +251,44 @@ footer span {
 
 /*=============== MODAL FRASES DO DIA ===============*/
 
-body.frases-expanded .frases-modal {
+.frases-modal{
+  opacity:0;
+  visibility: 0;
   position: fixed;
+  display: none;
+}
 
+body.frases-expanded{
+  overflow: hidden;
+}
+
+
+body.frases-expanded .frases-modal {
+  opacity: 1;
+  visibility: visible;
+
+  position: fixed;
+  top:0;
+  left: 0;
+  padding: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+body.frases-expanded .modal-content{
   background-color: #fff;
   box-shadow: 0rem 0rem 1rem 0.2rem rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
+  border-radius: 2rem;
+
+  padding: 2rem;
 
   width: 31.5rem;
   height: 21.8rem;
@@ -293,15 +338,31 @@ body.frases-expanded .icon-circ-mdl {
 
 body.frases-expanded .title-frase-mdl {
   font-family: 'Poppins';
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
 
-body.frases-expanded .close-frase {
+
+body.frases-expanded .frase-texto p {
+  text-align: left;
+  padding-top:0.8rem; 
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+body.frases-expanded .frases-modal button{
   border: 0.2rem solid var(--primary-color);
   border-radius: 50%;
+  background-color: #fff;
 
-  height: 3rem;
   width: 3rem;
+  height: 3rem;
+
+  cursor: pointer;
 }
+
+
+/*============= mdl add taks  ==============*/
+
