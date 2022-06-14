@@ -364,5 +364,127 @@ body.frases-expanded .frases-modal button{
 }
 
 
-/*============= mdl add taks  ==============*/
+
+/*============= janela new task  ==============*/
+
+body.new-task-expanded{
+  overflow: hidden;
+}
+
+.new-task{
+  opacity:0;
+  visibility: 0;
+  position: fixed;
+  display: none;
+}
+
+body.new-task-expanded .new-task{
+  opacity: 1;
+  visibility: visible;
+
+  position: fixed;
+  top:0;
+  left: 0;
+  padding: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.new-task-expanded .new-task .container{
+  background-color: #fff;
+  box-shadow: 0rem 0rem 1rem 0.2rem rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+
+  padding: 2rem;
+
+  width: 31.5rem;
+  height: 41.8rem;
+}
+
+body.new-task-expanded .nav-new-task{
+  display: flex;
+  justify-content: end;
+  align-items:end;
+  gap: 4.5rem ;
+}
+
+body.new-task-expanded .nav-new-task .nova-task{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+
+  color: var(--primary-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+body.new-task-expanded .close-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.new-task-expanded .conteudo-new-task{
+  margin-top: 3rem; 
+}
+
+body.new-task-expanded .conteudo-new-task .titulo,
+body.new-task-expanded .conteudo-new-task .descricao{
+  padding-inline: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 0.6rem;
+}
+
+body.new-task-expanded .conteudo-new-task .titulo{
+  margin-bottom: 1.9rem;
+}
+
+body.new-task-expanded .conteudo-new-task input{
+  background: var(--gray-section) ;
+
+  border-color: var(--gray-section);
+  border-style: none;
+  border-radius: 1rem;
+
+  width: 25.4rem;
+  height: 4rem;
+}
+
+body.new-task-expanded .descricao input{
+  height:9rem;
+}
+
+body.new-task-expanded .conteudo-new-task button{
+  width: 25.1rem;
+  height: 4.1rem;
+
+  margin-top: 4.1rem;
+
+  border-radius: 2rem;
+  background: var(--primary-color);
+
+  color: #fff;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
 

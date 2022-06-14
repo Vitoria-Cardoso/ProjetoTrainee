@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Trainee</title>
+    <title>uTask 3.0</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="">
+  <body class="new-task-expanded">
     <div class="wrapper nav">
       <div class="img-unect">
         <img src="/assets/Logo Branca.png" alt="logo unect" />
@@ -127,50 +127,60 @@
       </div>
       <!--  Janela da new-task   -->
       <div class="new-task">
-        <!--  nav  -->
-        <div class="nav-new-task">
-          <div class="nova-task"></div>
-          Nova task
-          <svg
-            width="121"
-            height="3"
-            viewBox="0 0 121 3"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="121" height="3" rx="1.5" fill="#226ED8" />
-          </svg>
-          <div>
-            <button class="close-button">
-              <svg
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.07422 1.74609L5.82031 5L9.07422 8.25391L8.25391 9.07422L5 5.82031L1.74609 9.07422L0.925781 8.25391L4.17969 5L0.925781 1.74609L1.74609 0.925781L5 4.17969L8.25391 0.925781L9.07422 1.74609Z"
-                  fill="#226ED8"
-                />
-              </svg>
-            </button>
+        <div class="container" >
+          <!--  nav  -->
+          <div class="nav-new-task">
+            <div class="nova-task">
+            Nova task
+            <svg
+              width="121"
+              height="3"
+              viewBox="0 0 121 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="121" height="3" rx="1.5" fill="#226ED8" />
+            </svg>
           </div>
-        </div>
-        <!--  conteúdo  -->
-        <div class="conteudo-new-task" >
-          <div class="titulo" >
-            Título *
-            <p></p>
+            <div>
+              <button onclick="closeNewTask()"
+              class="close-button">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.07422 1.74609L5.82031 5L9.07422 8.25391L8.25391 9.07422L5 5.82031L1.74609 9.07422L0.925781 8.25391L4.17969 5L0.925781 1.74609L1.74609 0.925781L5 4.17969L8.25391 0.925781L9.07422 1.74609Z"
+                    fill="#226ED8"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="descricao" >
-            Descrição
-            <p></p>
+          <!--  conteúdo  -->
+          <form>
+          <div class="conteudo-new-task">
+            <div class="titulo">
+              <label>Título *</label>
+              <input type="text" >
+            </div>
+            <div class="descricao">
+              <label>Descrição</label>
+              <input type="text">
+            </div>
+            <!-- botao -->
+            <div>
+              <button type="submit"  class="criar-task"> Criar task </button>
+            </div>
           </div>
+        </form>
         </div>
       </div>
       <div class="btn-add-task">
-        <button>
+        <button onclick="openNewTask()" >
           <svg
             width="10"
             height="10"
@@ -229,7 +239,7 @@
           <rect width="12" height="12" rx="6" fill="#226ED8" />
         </svg>
       </div>
-    
+
       <div class="second">
         <svg
           width="12"
