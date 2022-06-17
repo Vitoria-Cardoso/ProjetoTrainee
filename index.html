@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>uTask 3.0</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,53 +52,153 @@
         </div>
       </div>
       <section>
-        <div class="wrapper header">
-          <button onclick="openFrase()" class="btn-frase">
-            <div class="icon-last-circ">
-              <div class="btn-frase-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 23 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.98438 20.0156H10.0156C10.0156 20.5469 9.8125 21.0156 9.40625 21.4219C9.03125 21.7969 8.5625 21.9844 8 21.9844C7.4375 21.9844 6.95312 21.7969 6.54688 21.4219C6.17188 21.0156 5.98438 20.5469 5.98438 20.0156ZM4.01562 18.9844H11.9844V17.0156H4.01562V18.9844ZM15.5 9.51562C15.5 10.4531 15.3594 11.2969 15.0781 12.0469C14.7969 12.7656 14.4375 13.3906 14 13.9219C13.5938 14.4531 13.1719 14.8906 12.7344 15.2344C12.3281 15.5781 12 15.8281 11.75 15.9844H4.25C4 15.8281 3.65625 15.5781 3.21875 15.2344C2.8125 14.8906 2.39062 14.4531 1.95312 13.9219C1.54688 13.3906 1.20312 12.7656 0.921875 12.0469C0.640625 11.2969 0.5 10.4531 0.5 9.51562C0.5 8.48438 0.6875 7.51562 1.0625 6.60938C1.46875 5.70313 2.01562 4.90625 2.70312 4.21875C3.39062 3.53125 4.1875 3 5.09375 2.625C6 2.21875 6.96875 2.01562 8 2.01562C9.03125 2.01562 10 2.21875 10.9062 2.625C11.8125 3 12.6094 3.53125 13.2969 4.21875C13.9844 4.90625 14.5156 5.70313 14.8906 6.60938C15.2969 7.51562 15.5 8.48438 15.5 9.51562ZM20.375 7.35938L19.0156 8.01562L20.375 8.625L20.9844 9.98438L21.6406 8.625L23 8.01562L21.6406 7.35938L20.9844 6L20.375 7.35938ZM17.9844 6L18.9219 3.9375L20.9844 3L18.9219 2.0625L17.9844 0L17.0469 2.0625L14.9844 3L17.0469 3.9375L17.9844 6Z"
-                    fill="#FBB910"
-                  />
-                </svg>
+        <section>
+          <div class="wrapper header">
+            <button onclick="openFrase()" class="btn-frase">
+              <div class="icon-last-circ">
+                <div class="btn-frase-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 23 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.98438 20.0156H10.0156C10.0156 20.5469 9.8125 21.0156 9.40625 21.4219C9.03125 21.7969 8.5625 21.9844 8 21.9844C7.4375 21.9844 6.95312 21.7969 6.54688 21.4219C6.17188 21.0156 5.98438 20.5469 5.98438 20.0156ZM4.01562 18.9844H11.9844V17.0156H4.01562V18.9844ZM15.5 9.51562C15.5 10.4531 15.3594 11.2969 15.0781 12.0469C14.7969 12.7656 14.4375 13.3906 14 13.9219C13.5938 14.4531 13.1719 14.8906 12.7344 15.2344C12.3281 15.5781 12 15.8281 11.75 15.9844H4.25C4 15.8281 3.65625 15.5781 3.21875 15.2344C2.8125 14.8906 2.39062 14.4531 1.95312 13.9219C1.54688 13.3906 1.20312 12.7656 0.921875 12.0469C0.640625 11.2969 0.5 10.4531 0.5 9.51562C0.5 8.48438 0.6875 7.51562 1.0625 6.60938C1.46875 5.70313 2.01562 4.90625 2.70312 4.21875C3.39062 3.53125 4.1875 3 5.09375 2.625C6 2.21875 6.96875 2.01562 8 2.01562C9.03125 2.01562 10 2.21875 10.9062 2.625C11.8125 3 12.6094 3.53125 13.2969 4.21875C13.9844 4.90625 14.5156 5.70313 14.8906 6.60938C15.2969 7.51562 15.5 8.48438 15.5 9.51562ZM20.375 7.35938L19.0156 8.01562L20.375 8.625L20.9844 9.98438L21.6406 8.625L23 8.01562L21.6406 7.35938L20.9844 6L20.375 7.35938ZM17.9844 6L18.9219 3.9375L20.9844 3L18.9219 2.0625L17.9844 0L17.0469 2.0625L14.9844 3L17.0469 3.9375L17.9844 6Z"
+                      fill="#FBB910"
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-            <div class="btn-frase-p">
-              <p>Frases do dia</p>
-            </div>
-          </button>
-          <!-- MODAL FRASE DO DIA -->
-          <div class="frases-modal">
-            <div class="modal-content">
-              <div class="nav-frase-mdl">
-                <div class="icon-titulo">
-                  <div class="icon-circ-mdl">
-                    <div class="icon-mdl">
+              <div class="btn-frase-p">
+                <p>Frases do dia</p>
+              </div>
+            </button>
+            <!-- MODAL FRASE DO DIA -->
+            <div class="frases-modal">
+              <div class="modal-content">
+                <div class="nav-frase-mdl">
+                  <div class="icon-titulo">
+                    <div class="icon-circ-mdl">
+                      <div class="icon-mdl">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 23 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.98438 20.0156H10.0156C10.0156 20.5469 9.8125 21.0156 9.40625 21.4219C9.03125 21.7969 8.5625 21.9844 8 21.9844C7.4375 21.9844 6.95312 21.7969 6.54688 21.4219C6.17188 21.0156 5.98438 20.5469 5.98438 20.0156ZM4.01562 18.9844H11.9844V17.0156H4.01562V18.9844ZM15.5 9.51562C15.5 10.4531 15.3594 11.2969 15.0781 12.0469C14.7969 12.7656 14.4375 13.3906 14 13.9219C13.5938 14.4531 13.1719 14.8906 12.7344 15.2344C12.3281 15.5781 12 15.8281 11.75 15.9844H4.25C4 15.8281 3.65625 15.5781 3.21875 15.2344C2.8125 14.8906 2.39062 14.4531 1.95312 13.9219C1.54688 13.3906 1.20312 12.7656 0.921875 12.0469C0.640625 11.2969 0.5 10.4531 0.5 9.51562C0.5 8.48438 0.6875 7.51562 1.0625 6.60938C1.46875 5.70313 2.01562 4.90625 2.70312 4.21875C3.39062 3.53125 4.1875 3 5.09375 2.625C6 2.21875 6.96875 2.01562 8 2.01562C9.03125 2.01562 10 2.21875 10.9062 2.625C11.8125 3 12.6094 3.53125 13.2969 4.21875C13.9844 4.90625 14.5156 5.70313 14.8906 6.60938C15.2969 7.51562 15.5 8.48438 15.5 9.51562ZM20.375 7.35938L19.0156 8.01562L20.375 8.625L20.9844 9.98438L21.6406 8.625L23 8.01562L21.6406 7.35938L20.9844 6L20.375 7.35938ZM17.9844 6L18.9219 3.9375L20.9844 3L18.9219 2.0625L17.9844 0L17.0469 2.0625L14.9844 3L17.0469 3.9375L17.9844 6Z"
+                            fill="#FBB910"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="title-frase-mdl">Frase do dia</div>
+                  </div>
+                  <div>
+                    <button onclick="closeFrase()" class="close-button">
                       <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 23 22"
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 10"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M5.98438 20.0156H10.0156C10.0156 20.5469 9.8125 21.0156 9.40625 21.4219C9.03125 21.7969 8.5625 21.9844 8 21.9844C7.4375 21.9844 6.95312 21.7969 6.54688 21.4219C6.17188 21.0156 5.98438 20.5469 5.98438 20.0156ZM4.01562 18.9844H11.9844V17.0156H4.01562V18.9844ZM15.5 9.51562C15.5 10.4531 15.3594 11.2969 15.0781 12.0469C14.7969 12.7656 14.4375 13.3906 14 13.9219C13.5938 14.4531 13.1719 14.8906 12.7344 15.2344C12.3281 15.5781 12 15.8281 11.75 15.9844H4.25C4 15.8281 3.65625 15.5781 3.21875 15.2344C2.8125 14.8906 2.39062 14.4531 1.95312 13.9219C1.54688 13.3906 1.20312 12.7656 0.921875 12.0469C0.640625 11.2969 0.5 10.4531 0.5 9.51562C0.5 8.48438 0.6875 7.51562 1.0625 6.60938C1.46875 5.70313 2.01562 4.90625 2.70312 4.21875C3.39062 3.53125 4.1875 3 5.09375 2.625C6 2.21875 6.96875 2.01562 8 2.01562C9.03125 2.01562 10 2.21875 10.9062 2.625C11.8125 3 12.6094 3.53125 13.2969 4.21875C13.9844 4.90625 14.5156 5.70313 14.8906 6.60938C15.2969 7.51562 15.5 8.48438 15.5 9.51562ZM20.375 7.35938L19.0156 8.01562L20.375 8.625L20.9844 9.98438L21.6406 8.625L23 8.01562L21.6406 7.35938L20.9844 6L20.375 7.35938ZM17.9844 6L18.9219 3.9375L20.9844 3L18.9219 2.0625L17.9844 0L17.0469 2.0625L14.9844 3L17.0469 3.9375L17.9844 6Z"
-                          fill="#FBB910"
+                          d="M9.07422 1.74609L5.82031 5L9.07422 8.25391L8.25391 9.07422L5 5.82031L1.74609 9.07422L0.925781 8.25391L4.17969 5L0.925781 1.74609L1.74609 0.925781L5 4.17969L8.25391 0.925781L9.07422 1.74609Z"
+                          fill="#226ED8"
                         />
                       </svg>
-                    </div>
+                    </button>
                   </div>
-                  <div class="title-frase-mdl">Frase do dia</div>
                 </div>
-                <div>
-                  <button onclick="closeFrase()" class="close-button">
+                <div class="frase-texto">
+                  <p>
+                    Se você quer um pedacinho do paraíso, acredite em Deus. Mas
+                    se você quer conquistar o mundo, acredite em você porque
+                    Deus já te deu tudo o que você precisa para você vencer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="carousel">
+            <!--PRIMEIRO CAROUSEL-->
+            <div
+              data-js="carousel__item"
+              class="carousel__item carousel__item--visible"
+            >
+              <div class="wrapper headline">
+                <div class="title">
+                  <p>A fazer</p>
+                </div>
+                <!--  Janela da new-task   -->
+                <div class="new-task">
+                  <div class="container">
+                    <!--  nav  -->
+                    <div class="nav-new-task">
+                      <div class="nova-task">
+                        Nova task
+                        <svg
+                          width="121"
+                          height="3"
+                          viewBox="0 0 121 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            width="121"
+                            height="3"
+                            rx="1.5"
+                            fill="#226ED8"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <button onclick="closeNewTask()" class="close-button">
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.07422 1.74609L5.82031 5L9.07422 8.25391L8.25391 9.07422L5 5.82031L1.74609 9.07422L0.925781 8.25391L4.17969 5L0.925781 1.74609L1.74609 0.925781L5 4.17969L8.25391 0.925781L9.07422 1.74609Z"
+                              fill="#226ED8"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <!--  conteúdo  -->
+                    <form>
+                      <div class="conteudo-new-task">
+                        <div class="titulo">
+                          <label>Título *</label>
+                          <input type="text" />
+                        </div>
+                        <div class="descricao">
+                          <label>Descrição</label>
+                          <input type="text" />
+                        </div>
+                        <!-- botao -->
+                        <div>
+                          <button type="submit" class="criar-task">
+                            Criar task
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="btn-add-task">
+                  <button onclick="openNewTask()">
                     <svg
                       width="10"
                       height="10"
@@ -106,164 +207,262 @@
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M9.07422 1.74609L5.82031 5L9.07422 8.25391L8.25391 9.07422L5 5.82031L1.74609 9.07422L0.925781 8.25391L4.17969 5L0.925781 1.74609L1.74609 0.925781L5 4.17969L8.25391 0.925781L9.07422 1.74609Z"
+                        d="M9.65625 5.65625H5.65625V9.65625H4.34375V5.65625H0.34375V4.34375H4.34375V0.34375H5.65625V4.34375H9.65625V5.65625Z"
                         fill="#226ED8"
                       />
                     </svg>
                   </button>
                 </div>
               </div>
-              <div class="frase-texto">
-                <p>
-                  Se você quer um pedacinho do paraíso, acredite em Deus. Mas se
-                  você quer conquistar o mundo, acredite em você porque Deus já
-                  te deu tudo o que você precisa para você vencer.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wrapper headline">
-          <div class="title">
-            <p>A fazer</p>
-          </div>
-          <!--  Janela da new-task   -->
-          <div class="new-task">
-            <div class="container">
-              <!--  nav  -->
-              <div class="nav-new-task">
-                <div class="nova-task">
-                  Nova task
+
+              <div class="wrapper tasks">
+                <button
+                  data-js="carousel__button--prev"
+                  aria-label="Slide anterior"
+                  class="navigate-before"
+                >
                   <svg
-                    width="121"
-                    height="3"
-                    viewBox="0 0 121 3"
+                    width="10"
+                    height="16"
+                    viewBox="0 0 10 16"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <rect width="121" height="3" rx="1.5" fill="#226ED8" />
+                    <path
+                      d="M9.27734 2.25781L3.53516 8L9.27734 13.7422L7.51953 15.5L0.0195312 8L7.51953 0.5L9.27734 2.25781Z"
+                      fill="#226ED8"
+                    />
+                  </svg>
+                </button>
+                <div class="tasks-section"></div>
+                <button
+                  data-js="carousel__button--next"
+                  aria-label="Próximo slide"
+                  class="navigate-next"
+                >
+                  <svg
+                    width="10"
+                    height="16"
+                    viewBox="0 0 10 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.48047 0.5L9.98047 8L2.48047 15.5L0.722656 13.7422L6.46484 8L0.722656 2.25781L2.48047 0.5Z"
+                      fill="#226ED8"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="wrapper switch-task">
+                <div class="first">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="12" rx="6" fill="#226ED8" />
                   </svg>
                 </div>
-                <div>
-                  <button onclick="closeNewTask()" class="close-button">
-                    <svg
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.07422 1.74609L5.82031 5L9.07422 8.25391L8.25391 9.07422L5 5.82031L1.74609 9.07422L0.925781 8.25391L4.17969 5L0.925781 1.74609L1.74609 0.925781L5 4.17969L8.25391 0.925781L9.07422 1.74609Z"
-                        fill="#226ED8"
-                      />
-                    </svg>
-                  </button>
+
+                <div class="second">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="12" rx="6" fill="#C4C4C4" />
+                  </svg>
+                </div>
+                <div class="third">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="12" rx="6" fill="#C4C4C4" />
+                  </svg>
+                </div>
+                <!-- FIM PRIMEIRO CAROUSEL-->
+              </div>
+            </div>
+            <!--FIM PRIMEIRO CAROUSEL-->
+            <!-- SEGUNDO CAROUSEL -->
+            <div data-js="carousel__item" class="carousel__item">
+              <div class="wrapper headline">
+                <div class="title">
+                  <p>Em andamento</p>
                 </div>
               </div>
-              <!--  conteúdo  -->
-              <form>
-                <div class="conteudo-new-task">
-                  <div class="titulo">
-                    <label>Título *</label>
-                    <input type="text" />
-                  </div>
-                  <div class="descricao">
-                    <label>Descrição</label>
-                    <input type="text" />
-                  </div>
-                  <!-- botao -->
-                  <div>
-                    <button type="submit" class="criar-task">Criar task</button>
-                  </div>
+              <div class="wrapper tasks">
+                <button
+                  data-js="carousel__button--prev"
+                  aria-label="Slide anterior"
+                  class="navigate-before"
+                >
+                  <svg
+                    width="10"
+                    height="16"
+                    viewBox="0 0 10 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.27734 2.25781L3.53516 8L9.27734 13.7422L7.51953 15.5L0.0195312 8L7.51953 0.5L9.27734 2.25781Z"
+                      fill="#226ED8"
+                    />
+                  </svg>
+                </button>
+                <div class="tasks-section"></div>
+                <button
+                  data-js="carousel__button--next"
+                  aria-label="Próximo slide"
+                  class="navigate-next"
+                >
+                  <svg
+                    width="10"
+                    height="16"
+                    viewBox="0 0 10 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.48047 0.5L9.98047 8L2.48047 15.5L0.722656 13.7422L6.46484 8L0.722656 2.25781L2.48047 0.5Z"
+                      fill="#226ED8"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="wrapper switch-task">
+                <div class="first">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="12" rx="6" fill="#C4C4C4" />
+                  </svg>
                 </div>
-              </form>
-            </div>
-          </div>
-          <div class="btn-add-task">
-            <button onclick="openNewTask()">
-              <svg
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.65625 5.65625H5.65625V9.65625H4.34375V5.65625H0.34375V4.34375H4.34375V0.34375H5.65625V4.34375H9.65625V5.65625Z"
-                  fill="#226ED8"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="wrapper tasks">
-          <button class="navigate-before">
-            <svg
-              width="10"
-              height="16"
-              viewBox="0 0 10 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.27734 2.25781L3.53516 8L9.27734 13.7422L7.51953 15.5L0.0195312 8L7.51953 0.5L9.27734 2.25781Z"
-                fill="#226ED8"
-              />
-            </svg>
-          </button>
-          <div class="tasks-section"></div>
-          <div class="navigate-next">
-            <svg
-              width="10"
-              height="16"
-              viewBox="0 0 10 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.48047 0.5L9.98047 8L2.48047 15.5L0.722656 13.7422L6.46484 8L0.722656 2.25781L2.48047 0.5Z"
-                fill="#226ED8"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="wrapper switch-task">
-          <div class="first">
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="12" height="12" rx="6" fill="#226ED8" />
-            </svg>
-          </div>
 
-          <div class="second">
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="12" height="12" rx="6" fill="#C4C4C4" />
-            </svg>
+                <div class="second">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="12" rx="6" fill="#226ED8" />
+                  </svg>
+                </div>
+                <div class="third">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="12" rx="6" fill="#C4C4C4" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!--FIM SEGUNDO CAROUSEL -->
+            <!-- TERCEIRO CAROUSEL -->
+            <div data-js="carousel__item" class="carousel__item">
+              <div class="wrapper headline">
+                <div class="title">
+                  <p>Feito</p>
+                </div>
+              </div>
+              <div class="wrapper tasks">
+                <button
+                  data-js="carousel__button--prev"
+                  aria-label="Slide anterior"
+                  class="navigate-before"
+                >
+                  <svg
+                    width="10"
+                    height="16"
+                    viewBox="0 0 10 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.27734 2.25781L3.53516 8L9.27734 13.7422L7.51953 15.5L0.0195312 8L7.51953 0.5L9.27734 2.25781Z"
+                      fill="#226ED8"
+                    />
+                  </svg>
+                </button>
+                <div class="tasks-section"></div>
+                <button
+                  data-js="carousel__button--next"
+                  aria-label="Próximo slide"
+                  class="navigate-next"
+                >
+                  <svg
+                    width="10"
+                    height="16"
+                    viewBox="0 0 10 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.48047 0.5L9.98047 8L2.48047 15.5L0.722656 13.7422L6.46484 8L0.722656 2.25781L2.48047 0.5Z"
+                      fill="#226ED8"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="wrapper switch-task">
+                <div class="first">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="12" rx="6" fill="#C4C4C4" />
+                  </svg>
+                </div>
+
+                <div class="second">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="12" rx="6" fill="#C4C4C4" />
+                  </svg>
+                </div>
+                <div class="third">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="12" rx="6" fill="#226ED8" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!--FIM TERCEIRO CAROUSEL -->
           </div>
-          <div class="third">
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="12" height="12" rx="6" fill="#C4C4C4" />
-            </svg>
-          </div>
-        </div>
+        </section>
       </section>
       <div class="wrapper">
         <footer>

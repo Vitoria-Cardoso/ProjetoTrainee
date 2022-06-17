@@ -151,78 +151,7 @@ section {
   line-height: 3rem;
 }
 
-/* ================ HEADLINE  ===================*/
-
-.headline {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-inline: 4.4rem;
-}
-
-.headline button {
-  border: 0.2rem solid var(--primary-color);
-  border-radius: 50%;
-  background-color: var(--basic-color);
-
-  height: 3rem;
-  width: 3rem;
-
-  cursor: pointer;
-}
-
-.headline .title {
-  font-family: 'Poppins';
-
-  font-weight: 400;
-  font-size: 20px;
-
-  line-height: 30px;
-  letter-spacing: -0.025em;
-}
-
-/*====================== TASKS MENU ===================== */
-
-.tasks {
-  margin-top: 0.8rem;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.tasks-section {
-  border: 0.1rem solid var(--gray-section);
-  border-radius: 1rem;
-
-  width: 28.7rem;
-  height: 39.6rem;
-
-  background-color: var(--gray-section);
-}
-
-button.navigate-before {
-  margin-left: 1rem;
-  border: none;
-  background: var(--basic-color);
-  cursor: pointer;
-}
-.navigate-next {
-  margin-right: 1rem;
-  border: none;
-  background: var(--basic-color);
-  cursor: pointer;
-}
-
-.switch-task {
-  margin-top: 1.4rem;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1.4rem;
-}
+/*============ FOOTER========*/
 
 footer {
   font-weight: 100;
