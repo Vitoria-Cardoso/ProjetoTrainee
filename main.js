@@ -21,7 +21,12 @@ function closeNewTask() {
 //CAROUSEL FUNCTIONS
 
 const slides = document.querySelectorAll('[data-js="carousel__item"]')
-const nextButton = document.querySelectorAll('[data-js="carousel__button--next"]')
+const nextButton = document.querySelectorAll(
+  '[data-js="carousel__button--next"]'
+)
+const prevButton = document.querySelectorAll(
+  '[data-js="carousel__button--prev"]'
+)
 
 let currentSlideIndex = 0
 
@@ -38,7 +43,26 @@ function nextSlide() {
   slides[currentSlideIndex].classList.add('carousel__item--visible')
 }
 
+function prevSlide() {
+  const slides = document.querySelectorAll('[data-js="carousel__item"]')
+  if (currentSlideIndex === 0) {
+    currentSlideIndex = slides.length - 1
+  } else {
+    currentSlideIndex--
+  }
+
+  console.log(currentSlideIndex)
+
+  slides.forEach(slide => {
+    slide.classList.remove('carousel__item--visible')
+  })
+  slides[currentSlideIndex].classList.add('carousel__item--visible')
+}
 
 for (let i = 0; i < nextButton.length; i++) {
-  nextButton[i].addEventListener('click',nextSlide)
+  nextButton[i].addEventListener('click', nextSlide)
+}
+
+for (let i = 0; i < prevButton.length; i++) {
+  prevButton[i].addEventListener('click', prevSlide)
 }
