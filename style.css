@@ -29,9 +29,17 @@ body {
   height: 100%;
 }
 
+article {
+  width: 100%;
+}
+
 .wrapper {
-  width: 37.5rem;
   margin-inline: auto;
+}
+
+section {
+  width: 37.5rem;
+  margin: 0 auto;
 }
 
 /*=====================     = nav ======================*/
@@ -194,11 +202,17 @@ body {
   background-color: var(--gray-section);
 }
 
-.navigate-before {
+button.navigate-before {
   margin-left: 1rem;
+  border: none;
+  background: var(--basic-color);
+  cursor: pointer;
 }
 .navigate-next {
   margin-right: 1rem;
+  border: none;
+  background: var(--basic-color);
+  cursor: pointer;
 }
 
 .switch-task {
@@ -251,24 +265,23 @@ footer span {
 
 /*=============== MODAL FRASES DO DIA ===============*/
 
-.frases-modal{
-  opacity:0;
+.frases-modal {
+  opacity: 0;
   visibility: 0;
   position: fixed;
   display: none;
 }
 
-body.frases-expanded{
+body.frases-expanded {
   overflow: hidden;
 }
-
 
 body.frases-expanded .frases-modal {
   opacity: 1;
   visibility: visible;
 
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   padding: 0;
 
@@ -280,10 +293,9 @@ body.frases-expanded .frases-modal {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-body.frases-expanded .modal-content{
+body.frases-expanded .modal-content {
   background-color: #fff;
   box-shadow: 0rem 0rem 1rem 0.2rem rgba(0, 0, 0, 0.25);
   border-radius: 2rem;
@@ -343,16 +355,15 @@ body.frases-expanded .title-frase-mdl {
   line-height: 1.8rem;
 }
 
-
 body.frases-expanded .frase-texto p {
   text-align: left;
-  padding-top:0.8rem; 
+  padding-top: 0.8rem;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.1rem;
 }
 
-body.frases-expanded .frases-modal button{
+body.frases-expanded .frases-modal button {
   border: 0.2rem solid var(--primary-color);
   border-radius: 50%;
   background-color: #fff;
@@ -363,27 +374,25 @@ body.frases-expanded .frases-modal button{
   cursor: pointer;
 }
 
-
-
 /*============= janela new task  ==============*/
 
-body.new-task-expanded{
+body.new-task-expanded {
   overflow: hidden;
 }
 
-.new-task{
-  opacity:0;
+.new-task {
+  opacity: 0;
   visibility: 0;
   position: fixed;
   display: none;
 }
 
-body.new-task-expanded .new-task{
+body.new-task-expanded .new-task {
   opacity: 1;
   visibility: visible;
 
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   padding: 0;
 
@@ -397,7 +406,7 @@ body.new-task-expanded .new-task{
   justify-content: center;
 }
 
-body.new-task-expanded .new-task .container{
+body.new-task-expanded .new-task .container {
   background-color: #fff;
   box-shadow: 0rem 0rem 1rem 0.2rem rgba(0, 0, 0, 0.25);
   border-radius: 2rem;
@@ -408,14 +417,14 @@ body.new-task-expanded .new-task .container{
   height: 41.8rem;
 }
 
-body.new-task-expanded .nav-new-task{
+body.new-task-expanded .nav-new-task {
   display: flex;
   justify-content: end;
-  align-items:end;
-  gap: 4.5rem ;
+  align-items: end;
+  gap: 4.5rem;
 }
 
-body.new-task-expanded .nav-new-task .nova-task{
+body.new-task-expanded .nav-new-task .nova-task {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -426,23 +435,23 @@ body.new-task-expanded .nav-new-task .nova-task{
 
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
 }
 
-body.new-task-expanded .close-button{
+body.new-task-expanded .close-button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-body.new-task-expanded .conteudo-new-task{
-  margin-top: 3rem; 
+body.new-task-expanded .conteudo-new-task {
+  margin-top: 3rem;
 }
 
 body.new-task-expanded .conteudo-new-task .titulo,
-body.new-task-expanded .conteudo-new-task .descricao{
+body.new-task-expanded .conteudo-new-task .descricao {
   padding-inline: 1rem;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -451,12 +460,12 @@ body.new-task-expanded .conteudo-new-task .descricao{
   gap: 0.6rem;
 }
 
-body.new-task-expanded .conteudo-new-task .titulo{
+body.new-task-expanded .conteudo-new-task .titulo {
   margin-bottom: 1.9rem;
 }
 
-body.new-task-expanded .conteudo-new-task input{
-  background: var(--gray-section) ;
+body.new-task-expanded .conteudo-new-task input {
+  background: var(--gray-section);
 
   border-color: var(--gray-section);
   border-style: none;
@@ -466,11 +475,11 @@ body.new-task-expanded .conteudo-new-task input{
   height: 4rem;
 }
 
-body.new-task-expanded .descricao input{
-  height:9rem;
+body.new-task-expanded .descricao input {
+  height: 9rem;
 }
 
-body.new-task-expanded .conteudo-new-task button{
+body.new-task-expanded .conteudo-new-task button {
   width: 25.1rem;
   height: 4.1rem;
 
@@ -487,4 +496,3 @@ body.new-task-expanded .conteudo-new-task button{
   font-size: 1.4rem;
   line-height: 2.1rem;
 }
-
