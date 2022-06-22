@@ -16,6 +16,13 @@
   --fundo-amarelo-claro: hsl(50, 100%, 97%);
   --gray-section: hsl(0, 0%, 93%);
   --fundo-azul: hsl(215, 82%, 36%);
+
+
+  --padding-1024-screen: 8rem;
+  --margin-1024-screen: 8rem;
+
+  --padding-1440-screen: 16rem;
+  --margin-1440-screen: 16rem;
 }
 
 html,
@@ -24,6 +31,8 @@ body {
   font-size: 1.6rem;
   text-align: center;
   background: var(--basic-color);
+
+  max-width: 128rem;
 
   width: 100%;
   height: 100%;
@@ -37,20 +46,26 @@ article {
   margin-inline: auto;
 }
 
-section {
+section.main {
   width: 37.5rem;
-  margin: 0 auto;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*=====================     = nav ======================*/
 
 .nav {
   background: var(--primary-color);
+}
+
+.nav-content{
   height: 8rem;
   margin-bottom: 3rem;
 
   padding-inline: 2rem;
-
+  
   box-shadow: 0rem 0rem 1rem 0.2rem rgba(0, 0, 0, 0.3);
 
   display: flex;
@@ -58,6 +73,7 @@ section {
   flex-direction: row;
   justify-content: space-between;
 }
+
 
 .light-mode {
   border: 0.1rem solid #fff;
