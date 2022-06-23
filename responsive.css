@@ -89,6 +89,7 @@
 
   .carousel{
     display: flex;
+    max-width: 102.4rem;
   }
 
   .carousel .carousel__item{

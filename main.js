@@ -67,13 +67,19 @@ for (let i = 0; i < prevButton.length; i++) {
   prevButton[i].addEventListener('click', prevSlide)
 }
 
-
 //add class visible carousel responsive
-if (window.matchMedia("(min-width: 1024px)").matches) {
+if (window.matchMedia('(min-width: 1024px)').matches) {
   const slides = document.querySelectorAll('[data-js="carousel__item"]')
 
   slides.forEach(slide => {
     slide.classList.add('carousel__item--visible')
   })
-  
-} 
+}
+if (window.matchMedia('(max-width: 1023px)').matches) {
+  const slides = document.querySelectorAll('[data-js="carousel__item"]')
+
+  slides.forEach(slide => {
+    slide.classList.remove('carousel__item--visible')
+  })
+  slides[0].classList.add('carousel__item--visible')
+}
