@@ -80,6 +80,7 @@ if (window.matchMedia('(max-width: 1023px)').matches) {
 
   slides.forEach(slide => {
     slide.classList.remove('carousel__item--visible')
+    slide.classList.add('.carousel__item--hidden')
   })
   slides[0].classList.add('carousel__item--visible')
 }

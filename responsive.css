@@ -87,8 +87,16 @@
     display: none;
   }
 
+  section.sec-carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 3rem;
+  }
   .carousel{
     display: flex;
+    flex-direction: row;
     max-width: 102.4rem;
   }
 
