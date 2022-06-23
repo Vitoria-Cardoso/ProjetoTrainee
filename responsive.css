@@ -1,10 +1,10 @@
 @media (min-width: 1024px) {
 
-  .nav-content{
+  .nav-content {
     padding-inline: var(--padding-1024-screen) ;
   }
 
-  .wrapper.header {
+  .wrapper.header{
     display: none;
   }
 
@@ -21,8 +21,42 @@
     border-radius: 20px;
   }
 
-  footer{
+  footer {
     padding-inline: var(--padding-1024-screen);
+  }
+
+  .frase-resp .text-title{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    
+    color: var(--black-text);
+  }
+
+  .frase-resp .text-content{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+
+    color: var(--black-text);
+  }
+
+  .frase-resp .icon-last-circ{
+    margin-top: 1.6rem ;
+  }
+
+  .frase-resp .frase-resp-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .frase-resp{
+    padding-inline: 1.6rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
   }
 
   
