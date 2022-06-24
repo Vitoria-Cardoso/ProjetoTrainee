@@ -43,6 +43,7 @@
   border: 0.1rem solid var(--gray-section);
   border-radius: 1rem;
 
+
   width: 28.7rem;
   height: 39.6rem;
 
@@ -82,6 +83,8 @@ button.navigate-before {
   max-width:37.5rem;
   margin: 0 auto;
 }
+
+
 
 @keyframes fadeVisibility {
   0% {
