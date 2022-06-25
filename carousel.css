@@ -72,6 +72,18 @@ button.navigate-before {
   gap: 1.4rem;
 }
 
+.carousel_1{
+  margin: 0 auto;
+}
+.carousel_2{
+  margin: 0 auto;
+  display: block;
+}
+.carousel_3{
+  margin: 0 auto;
+  display: block;
+}
+
 .carousel .carousel__item,
 .carousel .carousel__item--hidden {
   display: none;
@@ -81,7 +93,6 @@ button.navigate-before {
   display: block;
   animation: fadeVisibility 0.5s;
   max-width:37.5rem;
-  margin: 0 auto;
 }
 
 

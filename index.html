@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <article>
@@ -145,14 +149,14 @@
                 </svg>
               </div>
             </div>
-            <div class="frase-resp-text" >
-              <div class="text-title" >Frase do dia</div>
-              <div class="text-content" >
-                Se você quer um pedacinho do paraíso, acredite em Deus. Mas se você quer conquistar o mundo, acredite em você porque Deus já te deu tudo o que você precisa para você vencer.
+            <div class="frase-resp-text">
+              <div class="text-title">Frase do dia</div>
+              <div class="text-content">
+                Se você quer um pedacinho do paraíso, acredite em Deus. Mas se
+                você quer conquistar o mundo, acredite em você porque Deus já te
+                deu tudo o que você precisa para você vencer.
               </div>
-              
             </div>
-
           </div>
         </section>
         <section class="sec-carousel">
@@ -205,27 +209,24 @@
                         </button>
                       </div>
                     </div>
-                    <!--  conteúdo  -->
+                    <!--  conteúdo FORM  -->
                     <form>
                       <div class="conteudo-new-task">
                         <div class="titulo">
                           <label>Título *</label>
-                          <input type="text" />
+                          <input type="text" id="inpTituloTask" />
                         </div>
                         <div class="descricao">
                           <label>Descrição</label>
-                          <input type="text" />
+                          <input type="text" id="inpDescTask" />
                         </div>
                         <!-- botao -->
-                        <div>
-                          <button type="submit" class="criar-task">
-                            Criar task
-                          </button>
-                        </div>
+                            <input type="submit" class="criar-task" value="Criar task" id="newTaskForm">
                       </div>
                     </form>
                   </div>
                 </div>
+                <!-- FIM Janela da new-task   -->
                 <div class="btn-add-task">
                   <button onclick="openNewTask()">
                     <svg
@@ -263,7 +264,9 @@
                     />
                   </svg>
                 </button>
-                <div class="tasks-section"></div>
+                <div class="tasks-section">
+                  <ul id="listAFazer"></ul>
+                </div>
                 <button
                   data-js="carousel__button--next"
                   aria-label="Próximo slide"
@@ -348,7 +351,9 @@
                     />
                   </svg>
                 </button>
-                <div class="tasks-section"></div>
+                <div class="tasks-section">
+                  <ul id="listFazendo"></ul>
+                </div>
                 <button
                   data-js="carousel__button--next"
                   aria-label="Próximo slide"
@@ -432,7 +437,7 @@
                     />
                   </svg>
                 </button>
-                <div class="tasks-section"></div>
+                <div class="tasks-section"><ul class="listFeito"></ul></div>
                 <button
                   data-js="carousel__button--next"
                   aria-label="Próximo slide"
@@ -519,6 +524,7 @@
         </footer>
       </div>
       <script src="main.js"></script>
+      <script src="task.js"></script>
     </article>
   </body>
 </html>

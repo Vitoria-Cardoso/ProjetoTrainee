@@ -84,3 +84,5 @@ if (window.matchMedia('(max-width: 1023px)').matches) {
   })
   slides[0].classList.add('carousel__item--visible')
 }
+
+
