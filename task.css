@@ -1,7 +1,79 @@
-/* .task{
-  
-} */
-
-.container-li{
-  
+span.material-icons-outlined{
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.8rem;
 }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' -25,
+  'opsz' 20
+}
+
+
+
+.tasks-section ul:nth-child(1){
+  margin-top: 2rem;
+}
+
+.tasks-section ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+/*soh tem um filho -container-li-*/
+.task{
+  list-style: none;
+  margin-inline: 2rem ;
+  max-height: fit-content;
+} 
+
+/*tem os atributos das tasks como filhos*/
+.container-li{
+  background: #FFFFFF;
+  border-radius: 1rem;
+  max-width: 25.3rem;
+  padding: 1.2rem ;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+} 
+
+.titulo-li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.desc-li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.titulo-li p {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #141414;
+}
+
+.desc-li p {
+  font-weight: 400; 
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #141414;
+}
+
+.desc-li .navigate-icon{
+  border: 0.1rem solid #226ED8;
+  background: #226ED8;
+  border-radius: 20px;
+}
+

@@ -56,12 +56,12 @@ function criarTaskElement(titulo, descricao) {
   //? HTML da li , injetado pela popularLista()
   li.innerHTML =  `
   <div class = "container-li"> 
-  <div class="titulo-li" > <p> ${titulo} </p> <span class="material-icons-outlined">
+  <div class="titulo-li" > <p> ${titulo} </p> <span class="material-symbols-outlined">
   more_vert
   </span>
   </div>
   <div class = "desc-li" >
-  <p> ${descricao} </p>  <span class="material-icons-outlined">
+  <p> ${descricao} </p>  <span class="material-icons-outlined navigate-icon">
   navigate_next
   </span>
   </div>
