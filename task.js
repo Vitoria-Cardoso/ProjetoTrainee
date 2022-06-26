@@ -19,11 +19,11 @@ function criarTask() {
   const ul = document.getElementById("listAFazer")
   ul.innerHTML = "" //? limpa ul 
 
-  //! aqui --
+  //! --
   //? visita cada obj do array taskAFazer e manda pra function popularLista()
   taskAFazer.forEach((task) => {
     //? function
-    popularLista("listFazer", task.titulo, task.descricao)
+    popularLista("listAFazer", task.titulo, task.descricao)
   })
 }
 
@@ -34,12 +34,13 @@ function getDados() {
   
   const inputDescricao = document.getElementById("inpDescTask")
   const descricao = inputDescricao.value
-
+  //!aqui foi
   return {titulo, descricao}
 }
 
 //* Function de popular as listas, injetar o html
 function popularLista(lista, titulo, descricao) {
+  console.log(`${lista}`)
   const ul = document.getElementById(lista) //? seleciona a lista que passsamos
   const li = criarTaskElement(titulo, descricao) //? cria o HTML da li
 

@@ -46,9 +46,6 @@ article {
   justify-content: space-between;
 }
 
-.wrapper {
-  /* margin-inline: auto; */
-}
 
 section.main {
   width: 37.5rem;
@@ -61,9 +58,7 @@ section.main {
 
 /*=====================     = nav ======================*/
 
-.nav {
-  /* background: var(--primary-color); */
-}
+
 
 .nav-content{
   height: 8rem;
