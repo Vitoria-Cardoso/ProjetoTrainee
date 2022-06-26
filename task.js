@@ -10,8 +10,6 @@ document.getElementById('newTaskForm').addEventListener('submit', event => {
   document.getElementById('modalNewTask').style.display = 'none'
 })
 
-
-
 //! FUNCITION ADD TASK A FAZER
 //* Primeira funcao chamada quando user submeter o form
 function criarTask() {
@@ -29,10 +27,9 @@ function criarTask() {
     popularLista('listAFazer', task.titulo, task.descricao)
   })
 
-  //achar task para mover 
+  //achar task para mover
   acharTask()
 }
-
 
 //* Function que pega os dados do submit e retorna obj
 function getDados() {
@@ -41,7 +38,6 @@ function getDados() {
 
   const inputDescricao = document.getElementById('inpDescTask')
   const descricao = inputDescricao.value
-
 
   //!mensagem de erro
   if (titulo && descricao != '') {
@@ -53,9 +49,11 @@ function getDados() {
 
 //* Function de popular as listas, injetar o html
 function popularLista(lista, titulo, descricao) {
+  console.log(lista, titulo, descricao)
   const ul = document.getElementById(lista) //? seleciona a lista que passsamos
+  console.log(ul)
   const li = criarTaskElement(titulo, descricao) //? cria o HTML da li
-
+  console.log(li)
   //?injeta o elemtento
   ul.appendChild(li)
 
@@ -94,16 +92,14 @@ function criarTaskElement(titulo, descricao) {
 
 //! ADICIONAR TASK NO AFAZER TA FUNCIONANDO
 
-
 //!mover task
 
-function acharTask(){
-  document.getElementById('mudarTask').addEventListener('submit', (event) => {
+function acharTask() {
+  document.getElementById('mudarTask').addEventListener('submit', event => {
     event.preventDefault()
     getDadosTask()
   })
 }
-
 
 //!PEGA os dados da task que quer mover e manda pra moverTask()
 function getDadosTask() {
@@ -113,7 +109,36 @@ function getDadosTask() {
   const inputDescricao = document.getElementById('insertDescricao')
   const descricao = inputDescricao.value
 
-  return { titulo, descricao }
+  moverTask(titulo, descricao)
 }
 
+function moverTask(titulo, descricao) {
+  let objeto = {}
+  let posicao = 0
 
+  taskAFazer.forEach((task, index) => {
+    //indo task por task ver de match a que a gente quer mover
+    if (task.titulo === titulo && task.descricao === descricao) {
+      objeto = task
+      posicao = index
+    }
+  })
+
+  taskAFazer.splice(posicao, 1)
+  taskFazendo.push(objeto)
+  //!
+
+  //repopular , listaAFazer => Fazendo
+  let ul = document.getElementById('listAFazer')
+  ul.innerHTML = '' //limpa
+  taskAFazer.forEach(task => {
+    popularLista('listAFazer', task.titulo, task.descricao)
+  })
+
+  let ul2 = document.getElementById('listFazendo')
+  ul2.innerHTML = ''
+  taskFazendo.forEach(task => {
+    popularLista('listFazendo', task.titulo, task.descricao)
+  })
+
+}
