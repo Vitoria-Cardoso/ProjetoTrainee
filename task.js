@@ -35,7 +35,14 @@ function getDados() {
   
   const inputDescricao = document.getElementById("inpDescTask")
   const descricao = inputDescricao.value
-  return {titulo, descricao}
+
+  //!mensagem de erro
+  if (titulo && descricao != "") {
+    return {titulo, descricao}
+  }else {
+    alert("Acho que voce esqueceu de preencher algum campo ⚠️")
+  }
+  
 }
 
 //* Function de popular as listas, injetar o html
