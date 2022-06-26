@@ -7,6 +7,7 @@ let taskFeito = [] //? Feito
 document.getElementById("newTaskForm").addEventListener("submit", (event) => {
   event.preventDefault()
   criarTask() //? function
+  document.getElementById("modalNewTask").style.display = "none"
 })
 
 //! FUNCITION ADD TASK A FAZER
@@ -34,13 +35,11 @@ function getDados() {
   
   const inputDescricao = document.getElementById("inpDescTask")
   const descricao = inputDescricao.value
-  //!aqui foi
   return {titulo, descricao}
 }
 
 //* Function de popular as listas, injetar o html
 function popularLista(lista, titulo, descricao) {
-  console.log(`${lista}`)
   const ul = document.getElementById(lista) //? seleciona a lista que passsamos
   const li = criarTaskElement(titulo, descricao) //? cria o HTML da li
 
@@ -69,3 +68,6 @@ function criarTaskElement(titulo, descricao) {
   `
   return li
 }
+
+//! ADICIONAR TASK NO AFAZER TA FUNCIONANDO  
+

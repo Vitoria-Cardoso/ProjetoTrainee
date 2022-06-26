@@ -30,13 +30,17 @@ span.material-icons-outlined{
   list-style: none;
   margin-inline: 2rem ;
   max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 } 
 
 /*tem os atributos das tasks como filhos*/
 .container-li{
   background: #FFFFFF;
   border-radius: 1rem;
-  max-width: 25.3rem;
+  width: 25.3rem;
   padding: 1.2rem ;
 
   display: flex;

@@ -10,6 +10,7 @@ function closeFrase() {
 
 //funttion abrir new-task
 function openNewTask() {
+  document.getElementById('modalNewTask').style.display = 'flex'
   document.body.classList.add('new-task-expanded')
 }
 
@@ -84,5 +85,3 @@ if (window.matchMedia('(max-width: 1023px)').matches) {
   })
   slides[0].classList.add('carousel__item--visible')
 }
-
-
