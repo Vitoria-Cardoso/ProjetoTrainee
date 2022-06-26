@@ -67,9 +67,9 @@ function criarTaskElement(titulo, descricao) {
   </span>
   </div>
   <div class = "desc-li" >
-  <p> ${descricao} </p>  <span class="material-icons-outlined navigate-icon">
+  <p> ${descricao} </p> <button class="navigate-icon" > <span class="material-icons-outlined">
   navigate_next
-  </span>
+  </span></button>
   </div>
   </div>
   `

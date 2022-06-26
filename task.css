@@ -79,5 +79,7 @@ span.material-icons-outlined{
   border: 0.1rem solid #226ED8;
   background: #226ED8;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 
