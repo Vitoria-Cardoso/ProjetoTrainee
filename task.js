@@ -141,4 +141,10 @@ function moverTask(titulo, descricao) {
     popularLista('listFazendo', task.titulo, task.descricao)
   })
 
+  let ul3 = document.getElementById('listFeito')
+  ul3.innerHTML = ''
+  taskFeito.forEach(task => {
+    popularLista('listFeito', task.titulo, task.descricao)
+  })
+
 }
